@@ -13,27 +13,35 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/itest/com/test/oddschecker/controller/OddscheckerITest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/itest/com/test/oddschecker/controller/OddscheckerITest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/test/oddschecker/controller/OddscheckerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/test/oddschecker/controller/OddscheckerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/test/oddschecker/domain/Odds.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/test/oddschecker/domain/Odds.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/test/oddschecker/service/OddsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/test/oddschecker/service/OddsService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/test/oddschecker/utility/ControllerUtility.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/test/oddschecker/utility/ControllerUtility.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/test/oddschecker/service/OddsServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/test/oddschecker/service/OddsServiceTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/oddschecker-0.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/oddschecker-0.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/checkstyle/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/checkstyle/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/checkstyle/main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/checkstyle/main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/itest/classes/com.test.oddschecker.controller.OddscheckerITest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/itest/classes/com.test.oddschecker.controller.OddscheckerITest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/itest/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/itest/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/itest/packages/com.test.oddschecker.controller.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/itest/packages/com.test.oddschecker.controller.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.test.oddschecker.controller.OddscheckerControllerTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.test.oddschecker.controller.OddscheckerControllerTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.test.oddschecker.service.OddsServiceTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.test.oddschecker.service.OddsServiceTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.test.oddschecker.controller.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.test.oddschecker.controller.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.test.oddschecker.service.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.test.oddschecker.service.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/itest/TEST-com.test.oddschecker.controller.OddscheckerITest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/itest/TEST-com.test.oddschecker.controller.OddscheckerITest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/itest/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/itest/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/itest/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/itest/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/itest/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/itest/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.test.oddschecker.controller.OddscheckerControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.test.oddschecker.controller.OddscheckerControllerTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.test.oddschecker.service.OddsServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.test.oddschecker.service.OddsServiceTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/itest/java/com/test/oddschecker/controller/OddscheckerITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/itest/java/com/test/oddschecker/controller/OddscheckerITest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/test/oddschecker/controller/OddscheckerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/oddschecker/controller/OddscheckerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/oddschecker/domain/Odds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/oddschecker/domain/Odds.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/test/oddschecker/service/OddsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/oddschecker/service/OddsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/test/oddschecker/utility/ControllerUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/oddschecker/utility/ControllerUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/oddschecker/service/OddsServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/oddschecker/service/OddsServiceTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -185,9 +193,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.OddscheckerITest.storeOddsInValidBetID" />
+        <item itemvalue="Gradle.OddscheckerITest.retrieveOddsInvalidBetIdFormat" />
         <item itemvalue="JAR Application.oddschecker-0.0.1.jar" />
         <item itemvalue="Gradle.OddscheckerControllerTest.testRetrieveOdds_InvalidBetId" />
-        <item itemvalue="Gradle.OddscheckerITest.retrieveOddsInvalidBetIdFormat" />
         <item itemvalue="Gradle.OddscheckerITest" />
       </list>
     </recent_temporary>
@@ -235,6 +243,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/com/test/oddschecker/controller/OddscheckerControllerTest.java</url>
           <line>128</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/itest/java/com/test/oddschecker/controller/OddscheckerITest.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

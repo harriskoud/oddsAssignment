@@ -7,6 +7,7 @@ import com.test.oddschecker.domain.Odds;
 import com.test.oddschecker.exception.OddsRetrievalBadRequestException;
 import com.test.oddschecker.exception.OddsStorageBadRequestException;
 import com.test.oddschecker.repository.OddsRepository;
+import com.test.oddschecker.utility.ControllerUtility;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -14,17 +15,16 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
-import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.client.RestTemplate;
-import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 
 import java.util.Optional;
 
+import static com.test.oddschecker.utility.ControllerUtility.createJsonObject;
 import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.Matchers.notNullValue;
@@ -39,6 +39,10 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest
 public class OddscheckerITest {
 
+    public static final String ODDS_BASE_PATH = "/v1/odds";
+    public static final String DELIMITER = "/";
+    private static final int RANDOM_NUMBER = 999;
+    private static final String RANDOM_STRING = "random";
     @Autowired
     private OddsRepository oddsRepository;
     @Autowired
@@ -67,19 +71,19 @@ public class OddscheckerITest {
 
     @Test
     public void storeOddsValidInput() throws Exception {
-        MvcResult result = mvc.perform(post("/odds")
+        MvcResult result = mvc.perform(post(ODDS_BASE_PATH)
                 .contentType(MediaType.APPLICATION_JSON_VALUE)
                 .content("{\n" +
                         "  \"betId\": \"1\",\n" +
                         "  \"odds\": \"1/10\",\n" +
                         "  \"userId\": \"Harris\"\n" +
                         "}"))
-                .andExpect(status().isCreated()).andExpect(content().string(ODDS_ACCEPTED)).andReturn();
+                .andExpect(status().isCreated()).andExpect(content().string(createJsonObject(ODDS_ACCEPTED).toString())).andReturn();
     }
 
     @Test
     public void storeOddsInValidBetID() throws Exception {
-        MvcResult result = mvc.perform(post("/odds")
+        MvcResult result = mvc.perform(post(ODDS_BASE_PATH)
                 .contentType(MediaType.APPLICATION_JSON_VALUE)
                 .content("{\n" +
                         "  \"betId\": \"test\",\n" +
@@ -95,7 +99,7 @@ public class OddscheckerITest {
 
     @Test
     public void storeOddsInValidInput1() throws Exception {
-        MvcResult result = mvc.perform(post("/odds")
+        MvcResult result = mvc.perform(post(ODDS_BASE_PATH)
                 .contentType(MediaType.APPLICATION_JSON_VALUE)
                 .content("{\n" +
                         "  \"betId\": \"1\",\n" +
@@ -121,7 +125,7 @@ public class OddscheckerITest {
         oddsRepository.save(odds2);
         oddsRepository.save(odds3);
 
-        MvcResult result = mvc.perform(get("/odds/" + BET_ID)
+        MvcResult result = mvc.perform(get(ODDS_BASE_PATH + DELIMITER + BET_ID)
                 .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andExpect(status().isOk()).andReturn();
 
@@ -142,7 +146,7 @@ public class OddscheckerITest {
         oddsRepository.save(odds2);
         oddsRepository.save(odds3);
 
-        MvcResult result = mvc.perform(get("/odds/" + BET_ID_1)
+        MvcResult result = mvc.perform(get(ODDS_BASE_PATH + DELIMITER + BET_ID_1)
                 .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andExpect(status().isOk()).andReturn();
 
@@ -163,7 +167,7 @@ public class OddscheckerITest {
         oddsRepository.save(odds2);
         oddsRepository.save(odds3);
 
-        MvcResult result = mvc.perform(get("/odds/9999")
+        MvcResult result = mvc.perform(get(ODDS_BASE_PATH + DELIMITER + RANDOM_NUMBER)
                 .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andExpect(status().isNotFound()).andReturn();
         Optional<OddsRetrievalBadRequestException> exception = Optional.ofNullable((OddsRetrievalBadRequestException) result.getResolvedException());
@@ -184,7 +188,7 @@ public class OddscheckerITest {
         oddsRepository.save(odds2);
         oddsRepository.save(odds3);
 
-        MvcResult result = mvc.perform(get("/odds/euhfhhf")
+        MvcResult result = mvc.perform(get(ODDS_BASE_PATH + DELIMITER + RANDOM_STRING)
                 .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andExpect(status().isBadRequest()).andReturn();
 

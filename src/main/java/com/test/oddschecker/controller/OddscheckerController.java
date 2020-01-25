@@ -37,7 +37,7 @@ public class OddscheckerController {
     })
     @PostMapping
     public ResponseEntity<String> postOdds(@RequestBody final Odds odds) {
-        LOG.info(String.format("Storing new odds $ for bet $"), odds.getOdds(), odds.getBetId());
+        LOG.info(String.format("Storing new odds %s for bet %s", odds.getOdds(), odds.getBetId()));
         return oddsService.storeOdds(odds);
     }
 
@@ -49,7 +49,7 @@ public class OddscheckerController {
     })
     @GetMapping("/{betId}")
     public ResponseEntity<Bet> retrieveOdds(@PathVariable final Integer betId) {
-        LOG.info(String.format("Querying new odds for bet $"), betId);
+        LOG.info(String.format("Querying new odds for bet %s", betId));
         return oddsService.retrieveOddsByBetId(betId);
     }
 
@@ -64,6 +64,6 @@ public class OddscheckerController {
     @ExceptionHandler(InvalidFormatException.class)
     public ResponseEntity<Object> handleInvalidFormatException() {
         LOG.error("Attempt to store odds with invalid betId format in request body");
-        return new ResponseEntity(ControllerUtility.createJsonObject(INVALID_BET_ID), HttpStatus.BAD_REQUEST);
+        return new ResponseEntity(ControllerUtility.createJsonObject(INVALID_BET_ID).toString(), HttpStatus.BAD_REQUEST);
     }
 }

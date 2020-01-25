@@ -40,4 +40,14 @@ public class Odds {
     public void setOddsId(final Integer oddsId) {
         this.oddsId = oddsId;
     }
+
+    @Override
+    public String toString() {
+        return "[Odds: "
+                + " oddsId " + oddsId
+                + " userId " + betId
+                + " userId " + userId
+                + " odds " + odds
+                + " ]";
+    }
 }
