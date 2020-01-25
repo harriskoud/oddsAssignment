@@ -29,9 +29,9 @@ There we can find all the endpoints along with the responses and the models that
 # Postman Collection
 https://www.getpostman.com/collections/35acf5b130d76e0e134e
 
-#Static code analysis
+# Static code analysis
 For this project, for static analysis we have used the checkstyle plugin. You can find the rules in the etc/checkstyle/rules.xml. A gradle task is also created and the successful build depends on checkstyle outcome.
 There is always a report created after each run.
 
-#Docker
+# Docker
 The application is dockerized, we have created a Dockerfile that describes the image and the command required. 
