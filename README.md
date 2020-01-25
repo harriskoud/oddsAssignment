@@ -9,7 +9,7 @@
 Java 8, Spring boot framework, H2 in memory Data base, gradle.
 
 # Architecture
-The project consists of two separeted components
+The project consists of one component
 1. Oddschecker microservice
 
 # Deployment
