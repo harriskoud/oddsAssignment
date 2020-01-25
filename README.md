@@ -1,5 +1,6 @@
 # Oddschecker-assignment
 
+- Oddschecker controller to support get and post requests, as the are described in the pdf and the swagger file.
 - Logging also contains all the queries that are going to be made.
 - Unit and integration tests are included to cover all possible scenarios.
 - Data.sql file contains all sql commands for setting up the inMemory DB 
