@@ -39,10 +39,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest
 public class OddscheckerITest {
 
-    public static final String ODDS_BASE_PATH = "/v1/odds";
-    public static final String DELIMITER = "/";
-    private static final int RANDOM_NUMBER = 999;
-    private static final String RANDOM_STRING = "random";
     @Autowired
     private OddsRepository oddsRepository;
     @Autowired
@@ -60,7 +56,11 @@ public class OddscheckerITest {
     private static final String ODDS_ACCEPTED = "Odds have been created for bet";
     private static final String IVALID_ODDS_FORMAT = "Invalid format of Odds";
     private static final String BET_NOT_FOUND = "Bet not found for given ID";
-    public static final String INVALID_BET_ID = "Invalid Bet ID supplied";
+    private static final String INVALID_BET_ID = "Invalid Bet ID supplied";
+    private static final String ODDS_BASE_PATH = "/v1/odds";
+    private static final String DELIMITER = "/";
+    private static final int RANDOM_NUMBER = 999;
+    private static final String RANDOM_STRING = "random";
 
     @Before
     public void setUp() {
