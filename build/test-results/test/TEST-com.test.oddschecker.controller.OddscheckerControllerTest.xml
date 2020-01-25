@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.test.oddschecker.controller.OddscheckerControllerTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-01-25T14:20:33" hostname="DESKTOP-GU8VPH4" time="0.224">
+<testsuite name="com.test.oddschecker.controller.OddscheckerControllerTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-01-25T18:27:13" hostname="DESKTOP-GU8VPH4" time="0.063">
   <properties/>
-  <testcase name="testRetrieveOdds_InvalidBetId" classname="com.test.oddschecker.controller.OddscheckerControllerTest" time="0.096"/>
-  <testcase name="testSubmitOddsValidInput1" classname="com.test.oddschecker.controller.OddscheckerControllerTest" time="0.023"/>
-  <testcase name="testSubmitOddsValidInput2" classname="com.test.oddschecker.controller.OddscheckerControllerTest" time="0.017"/>
-  <testcase name="testSubmitOddsValidInput3" classname="com.test.oddschecker.controller.OddscheckerControllerTest" time="0.007"/>
-  <testcase name="testRetrieveOdds_betIdNotFound" classname="com.test.oddschecker.controller.OddscheckerControllerTest" time="0.007"/>
-  <testcase name="testRetrieveOdds" classname="com.test.oddschecker.controller.OddscheckerControllerTest" time="0.007"/>
-  <testcase name="testSubmitOddsInValidInput1" classname="com.test.oddschecker.controller.OddscheckerControllerTest" time="0.011"/>
-  <testcase name="testSubmitOddsInValidInput2" classname="com.test.oddschecker.controller.OddscheckerControllerTest" time="0.011"/>
-  <testcase name="testSubmitOddsInValidInput3" classname="com.test.oddschecker.controller.OddscheckerControllerTest" time="0.007"/>
-  <testcase name="testSubmitOddsInValidInput4" classname="com.test.oddschecker.controller.OddscheckerControllerTest" time="0.008"/>
-  <system-out><![CDATA[16:20:20.596 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.test.oddschecker.controller.OddscheckerControllerTest]
-16:20:20.597 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.test.oddschecker.controller.OddscheckerControllerTest]
-16:20:20.599 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.test.oddschecker.controller.OddscheckerControllerTest]
-16:20:20.600 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.test.oddschecker.controller.OddscheckerControllerTest]
-16:20:20.607 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@4b5bbdc testClass = OddscheckerControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@5cf09c56 testClass = OddscheckerControllerTest, locations = '{}', classes = '{class com.test.oddschecker.OddscheckerApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@24de5e49, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7391177a, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1ff8dd29, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@6af627a2, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@266096b7], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
-16:20:20.611 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.test.oddschecker.controller.OddscheckerControllerTest]
-16:20:20.612 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.test.oddschecker.controller.OddscheckerControllerTest]
-16:20:20.657 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
-
+  <testcase name="testRetrieveOdds_InvalidBetId" classname="com.test.oddschecker.controller.OddscheckerControllerTest" time="0.009"/>
+  <testcase name="testSubmitOddsValidInput1" classname="com.test.oddschecker.controller.OddscheckerControllerTest" time="0.005"/>
+  <testcase name="testSubmitOddsValidInput2" classname="com.test.oddschecker.controller.OddscheckerControllerTest" time="0.004"/>
+  <testcase name="testSubmitOddsValidInput3" classname="com.test.oddschecker.controller.OddscheckerControllerTest" time="0.004"/>
+  <testcase name="testRetrieveOdds_betIdNotFound" classname="com.test.oddschecker.controller.OddscheckerControllerTest" time="0.004"/>
+  <testcase name="testRetrieveOdds" classname="com.test.oddschecker.controller.OddscheckerControllerTest" time="0.003"/>
+  <testcase name="testSubmitOddsInValidInput1" classname="com.test.oddschecker.controller.OddscheckerControllerTest" time="0.006"/>
+  <testcase name="testSubmitOddsInValidInput2" classname="com.test.oddschecker.controller.OddscheckerControllerTest" time="0.005"/>
+  <testcase name="testSubmitOddsInValidInput3" classname="com.test.oddschecker.controller.OddscheckerControllerTest" time="0.006"/>
+  <testcase name="testSubmitOddsInValidInput4" classname="com.test.oddschecker.controller.OddscheckerControllerTest" time="0.006"/>
+  <system-out><![CDATA[
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
 ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
@@ -28,7 +20,7 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.2.4.RELEASE)
 
-2020-01-25 16:20:21.327  WARN 7724 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+2020-01-25 20:27:10.840  WARN 30400 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
 
 Found multiple occurrences of org.json.JSONObject on the class path:
 
@@ -37,41 +29,39 @@ Found multiple occurrences of org.json.JSONObject on the class path:
 
 You may wish to exclude one of them to ensure predictable runtime behavior
 
-2020-01-25 16:20:21.377  INFO 7724 --- [    Test worker] c.t.o.c.OddscheckerControllerTest        : Starting OddscheckerControllerTest on DESKTOP-GU8VPH4 with PID 7724 (started by hkoud in C:\Users\hkoud\Downloads\oddschecker)
-2020-01-25 16:20:21.381  INFO 7724 --- [    Test worker] c.t.o.c.OddscheckerControllerTest        : No active profile set, falling back to default profiles: default
-2020-01-25 16:20:23.712  INFO 7724 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-01-25 16:20:23.812  INFO 7724 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86ms. Found 1 JPA repository interfaces.
-2020-01-25 16:20:25.605  INFO 7724 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-01-25 16:20:26.064  INFO 7724 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-01-25 16:20:26.418  INFO 7724 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-01-25 16:20:26.602  INFO 7724 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-01-25 16:20:26.769  INFO 7724 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
-2020-01-25 16:20:26.860  INFO 7724 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-01-25 16:20:27.240  INFO 7724 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-01-25 20:27:10.842  INFO 30400 --- [    Test worker] c.t.o.c.OddscheckerControllerTest        : Starting OddscheckerControllerTest on DESKTOP-GU8VPH4 with PID 30400 (started by hkoud in C:\Users\hkoud\Downloads\oddschecker)
+2020-01-25 20:27:10.843  INFO 30400 --- [    Test worker] c.t.o.c.OddscheckerControllerTest        : No active profile set, falling back to default profiles: default
+2020-01-25 20:27:11.375  INFO 30400 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-25 20:27:11.393  INFO 30400 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 1 JPA repository interfaces.
+2020-01-25 20:27:11.528  INFO 30400 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-25 20:27:11.689  INFO 30400 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-01-25 20:27:11.690  INFO 30400 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-01-25 20:27:11.711  INFO 30400 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-25 20:27:11.717  INFO 30400 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
 Hibernate: drop table odds if exists
 Hibernate: create table odds (odds_id integer generated by default as identity, bet_id integer not null, odds varchar(255) not null, user_id varchar(255) not null, primary key (odds_id))
-2020-01-25 16:20:28.322  INFO 7724 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-01-25 16:20:28.337  INFO 7724 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-01-25 16:20:29.146  WARN 7724 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-01-25 16:20:29.916  INFO 7724 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2020-01-25 16:20:30.274  INFO 7724 --- [    Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-01-25 16:20:31.469  INFO 7724 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-01-25 16:20:32.657  INFO 7724 --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-01-25 16:20:32.746  INFO 7724 --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-01-25 16:20:32.810  INFO 7724 --- [    Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-01-25 16:20:33.352  INFO 7724 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
-2020-01-25 16:20:33.362  INFO 7724 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
-2020-01-25 16:20:33.443  INFO 7724 --- [    Test worker] c.t.o.c.OddscheckerControllerTest        : Started OddscheckerControllerTest in 12.773 seconds (JVM running for 15.148)
-2020-01-25 16:20:33.650  INFO 7724 --- [    Test worker] c.t.o.controller.OddscheckerController   : Quering new odds for bet $
-2020-01-25 16:20:33.703  INFO 7724 --- [    Test worker] c.t.o.controller.OddscheckerController   : Storing new odds $ for bet $
-2020-01-25 16:20:33.724  INFO 7724 --- [    Test worker] c.t.o.controller.OddscheckerController   : Storing new odds $ for bet $
-2020-01-25 16:20:33.734  INFO 7724 --- [    Test worker] c.t.o.controller.OddscheckerController   : Storing new odds $ for bet $
-2020-01-25 16:20:33.744  INFO 7724 --- [    Test worker] c.t.o.controller.OddscheckerController   : Quering new odds for bet $
-2020-01-25 16:20:33.754  INFO 7724 --- [    Test worker] c.t.o.controller.OddscheckerController   : Quering new odds for bet $
-2020-01-25 16:20:33.764  INFO 7724 --- [    Test worker] c.t.o.controller.OddscheckerController   : Storing new odds $ for bet $
-2020-01-25 16:20:33.784  INFO 7724 --- [    Test worker] c.t.o.controller.OddscheckerController   : Storing new odds $ for bet $
-2020-01-25 16:20:33.797  INFO 7724 --- [    Test worker] c.t.o.controller.OddscheckerController   : Storing new odds $ for bet $
-2020-01-25 16:20:33.808  INFO 7724 --- [    Test worker] c.t.o.controller.OddscheckerController   : Storing new odds $ for bet $
+2020-01-25 20:27:11.752  INFO 30400 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-25 20:27:11.753  INFO 30400 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-25 20:27:12.007  WARN 30400 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-25 20:27:12.265  INFO 30400 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-01-25 20:27:12.443  INFO 30400 --- [    Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-01-25 20:27:12.708  INFO 30400 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-25 20:27:13.067  INFO 30400 --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-01-25 20:27:13.068  INFO 30400 --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-01-25 20:27:13.075  INFO 30400 --- [    Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-01-25 20:27:13.130  INFO 30400 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2020-01-25 20:27:13.132  INFO 30400 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2020-01-25 20:27:13.146  INFO 30400 --- [    Test worker] c.t.o.c.OddscheckerControllerTest        : Started OddscheckerControllerTest in 2.338 seconds (JVM running for 11.911)
+2020-01-25 20:27:13.156  INFO 30400 --- [    Test worker] c.t.o.controller.OddscheckerController   : Querying new odds for bet $
+2020-01-25 20:27:13.163  INFO 30400 --- [    Test worker] c.t.o.controller.OddscheckerController   : Storing new odds $ for bet $
+2020-01-25 20:27:13.169  INFO 30400 --- [    Test worker] c.t.o.controller.OddscheckerController   : Storing new odds $ for bet $
+2020-01-25 20:27:13.174  INFO 30400 --- [    Test worker] c.t.o.controller.OddscheckerController   : Storing new odds $ for bet $
+2020-01-25 20:27:13.179  INFO 30400 --- [    Test worker] c.t.o.controller.OddscheckerController   : Querying new odds for bet $
+2020-01-25 20:27:13.184  INFO 30400 --- [    Test worker] c.t.o.controller.OddscheckerController   : Querying new odds for bet $
+2020-01-25 20:27:13.189  INFO 30400 --- [    Test worker] c.t.o.controller.OddscheckerController   : Storing new odds $ for bet $
+2020-01-25 20:27:13.196  INFO 30400 --- [    Test worker] c.t.o.controller.OddscheckerController   : Storing new odds $ for bet $
+2020-01-25 20:27:13.202  INFO 30400 --- [    Test worker] c.t.o.controller.OddscheckerController   : Storing new odds $ for bet $
+2020-01-25 20:27:13.209  INFO 30400 --- [    Test worker] c.t.o.controller.OddscheckerController   : Storing new odds $ for bet $
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

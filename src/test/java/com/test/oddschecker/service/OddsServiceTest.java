@@ -5,6 +5,7 @@ import com.test.oddschecker.domain.Odds;
 import com.test.oddschecker.exception.OddsRetrievalBadRequestException;
 import com.test.oddschecker.exception.OddsStorageBadRequestException;
 import com.test.oddschecker.repository.OddsRepository;
+import com.test.oddschecker.utility.ControllerUtility;
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
@@ -20,6 +21,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
+import static com.test.oddschecker.utility.ControllerUtility.createJsonObject;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
@@ -59,7 +61,7 @@ public class OddsServiceTest {
         when(oddsRepository.save(any())).thenReturn(valid_odds);
         ResponseEntity<String> response = oddsService.storeOdds(valid_odds);
         Assert.assertEquals(response.getStatusCodeValue(), HTTP_STATUS_OK);
-        Assert.assertEquals(response.getBody(), ODDS_ACCEPTED);
+        Assert.assertEquals(response.getBody(), createJsonObject(ODDS_ACCEPTED).toString());
     }
 
     @Test
@@ -68,7 +70,7 @@ public class OddsServiceTest {
         when(oddsRepository.save(any())).thenReturn(valid_odds);
         ResponseEntity<String> response = oddsService.storeOdds(valid_odds);
         Assert.assertEquals(response.getStatusCodeValue(), HTTP_STATUS_OK);
-        Assert.assertEquals(response.getBody(), ODDS_ACCEPTED);
+        Assert.assertEquals(response.getBody(), createJsonObject(ODDS_ACCEPTED).toString());
     }
 
     @Test
@@ -77,7 +79,7 @@ public class OddsServiceTest {
         when(oddsRepository.save(any())).thenReturn(valid_odds);
         ResponseEntity<String> response = oddsService.storeOdds(valid_odds);
         Assert.assertEquals(response.getStatusCodeValue(), HTTP_STATUS_OK);
-        Assert.assertEquals(response.getBody(), ODDS_ACCEPTED);
+        Assert.assertEquals(response.getBody(), createJsonObject(ODDS_ACCEPTED).toString());
     }
 
     @Test
@@ -114,25 +116,20 @@ public class OddsServiceTest {
 
     @Test
     public void retrieveOdds_shouldReturn3() {
-
         when(oddsRepository.findOddsByBetId(any())).thenReturn(Optional.of(createOddsListSameBetId()));
         ResponseEntity<Bet> betResponseEntity = oddsService.retrieveOddsByBetId(1);
         Assert.assertEquals(betResponseEntity.getBody().getOddsList().size(), 3);
-
     }
 
     @Test
     public void retrieveOdds_shouldReturn1() {
-
-        when(oddsRepository.findOddsByBetId(any())).thenReturn(Optional.of(createOddsListRandomBetId()));
+        when(oddsRepository.findOddsByBetId(any())).thenReturn(Optional.of(Arrays.asList(new Odds(1, BET_ID_1, USER_ID, VALID_INPUT1))));
         ResponseEntity<Bet> betResponseEntity = oddsService.retrieveOddsByBetId(2);
         Assert.assertEquals(betResponseEntity.getBody().getOddsList().size(), 1);
-
     }
 
     @Test
     public void retrieveOdds_shouldThrowNotFoundException() {
-
         when(oddsRepository.findOddsByBetId(any())).thenReturn(Optional.empty());
         exceptionRule.expect(OddsRetrievalBadRequestException.class);
         exceptionRule.expectMessage(BET_NOT_FOUND);

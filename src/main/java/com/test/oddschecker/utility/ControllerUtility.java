@@ -1,5 +1,7 @@
 package com.test.oddschecker.utility;
 
+import org.json.JSONObject;
+
 public final class ControllerUtility {
 
     public static final String ODDS_BASE_PATH = "odds";
@@ -11,5 +13,13 @@ public final class ControllerUtility {
 
     private ControllerUtility() {
         /*this class should not be instantiated */
+    }
+
+    public static JSONObject createJsonObject(final String message) {
+        JSONObject responsePayload = new JSONObject();
+        JSONObject responseMessage = new JSONObject();
+        responseMessage.put("message", message);
+        responsePayload.put("payload", responseMessage);
+        return responsePayload;
     }
 }

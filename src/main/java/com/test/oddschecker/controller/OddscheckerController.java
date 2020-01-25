@@ -5,10 +5,10 @@ import com.test.oddschecker.domain.Bet;
 import com.test.oddschecker.domain.Odds;
 import com.test.oddschecker.repository.OddsRepository;
 import com.test.oddschecker.service.OddsService;
+import com.test.oddschecker.utility.ControllerUtility;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
-import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,25 +49,21 @@ public class OddscheckerController {
     })
     @GetMapping("/{betId}")
     public ResponseEntity<Bet> retrieveOdds(@PathVariable final Integer betId) {
-        LOG.info(String.format("Quering new odds for bet $"), betId);
+        LOG.info(String.format("Querying new odds for bet $"), betId);
         return oddsService.retrieveOddsByBetId(betId);
     }
 
+    //They are placed here because we want only this controller to handle this way the following exceptions
+    //If we wanted to have a global behaviour, then we would use the @ControllerAdvice
     @ExceptionHandler(MethodArgumentTypeMismatchException.class)
     public ResponseEntity<Object> handleMethodArgumentTypeMismatchException() {
-        JSONObject responsePayload = new JSONObject();
-        JSONObject responseMessage = new JSONObject();
-        responseMessage.put("message", INVALID_BET_ID);
-        responsePayload.put("payload", responseMessage);
-        return new ResponseEntity(responsePayload.toString(), HttpStatus.BAD_REQUEST);
+        LOG.error("Attempt to store odds with invalid betId format in path variable");
+        return new ResponseEntity(ControllerUtility.createJsonObject(INVALID_BET_ID).toString(), HttpStatus.BAD_REQUEST);
     }
 
     @ExceptionHandler(InvalidFormatException.class)
     public ResponseEntity<Object> handleInvalidFormatException() {
-        JSONObject responsePayload = new JSONObject();
-        JSONObject responseMessage = new JSONObject();
-        responseMessage.put("message", INVALID_BET_ID);
-        responsePayload.put("payload", responseMessage);
-        return new ResponseEntity(responsePayload.toString(), HttpStatus.BAD_REQUEST);
+        LOG.error("Attempt to store odds with invalid betId format in request body");
+        return new ResponseEntity(ControllerUtility.createJsonObject(INVALID_BET_ID), HttpStatus.BAD_REQUEST);
     }
 }

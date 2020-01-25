@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.test.oddschecker.service.OddsServiceTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-01-25T14:20:37" hostname="DESKTOP-GU8VPH4" time="0.052">
+<testsuite name="com.test.oddschecker.service.OddsServiceTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-01-25T18:27:10" hostname="DESKTOP-GU8VPH4" time="0.118">
   <properties/>
-  <testcase name="retrieveOdds_shouldThrowNotFoundException" classname="com.test.oddschecker.service.OddsServiceTest" time="0.007"/>
-  <testcase name="retrieveOdds_shouldReturn1" classname="com.test.oddschecker.service.OddsServiceTest" time="0.004"/>
-  <testcase name="retrieveOdds_shouldReturn3" classname="com.test.oddschecker.service.OddsServiceTest" time="0.003"/>
-  <testcase name="storeOddsTestSuccess_validInput1" classname="com.test.oddschecker.service.OddsServiceTest" time="0.006"/>
-  <testcase name="storeOddsTestSuccess_validInput2" classname="com.test.oddschecker.service.OddsServiceTest" time="0.005"/>
-  <testcase name="storeOddsTestSuccess_validInput3" classname="com.test.oddschecker.service.OddsServiceTest" time="0.005"/>
-  <testcase name="storeOddsTestFail_inValidInput1" classname="com.test.oddschecker.service.OddsServiceTest" time="0.004"/>
-  <testcase name="storeOddsTestFail_inValidInput2" classname="com.test.oddschecker.service.OddsServiceTest" time="0.003"/>
-  <testcase name="storeOddsTestFail_inValidInput3" classname="com.test.oddschecker.service.OddsServiceTest" time="0.003"/>
-  <testcase name="storeOddsTestFail_inValidInput4" classname="com.test.oddschecker.service.OddsServiceTest" time="0.003"/>
-  <system-out><![CDATA[
+  <testcase name="retrieveOdds_shouldThrowNotFoundException" classname="com.test.oddschecker.service.OddsServiceTest" time="0.053"/>
+  <testcase name="retrieveOdds_shouldReturn1" classname="com.test.oddschecker.service.OddsServiceTest" time="0.01"/>
+  <testcase name="retrieveOdds_shouldReturn3" classname="com.test.oddschecker.service.OddsServiceTest" time="0.005"/>
+  <testcase name="storeOddsTestSuccess_validInput1" classname="com.test.oddschecker.service.OddsServiceTest" time="0.012"/>
+  <testcase name="storeOddsTestSuccess_validInput2" classname="com.test.oddschecker.service.OddsServiceTest" time="0.004"/>
+  <testcase name="storeOddsTestSuccess_validInput3" classname="com.test.oddschecker.service.OddsServiceTest" time="0.004"/>
+  <testcase name="storeOddsTestFail_inValidInput1" classname="com.test.oddschecker.service.OddsServiceTest" time="0.005"/>
+  <testcase name="storeOddsTestFail_inValidInput2" classname="com.test.oddschecker.service.OddsServiceTest" time="0.004"/>
+  <testcase name="storeOddsTestFail_inValidInput3" classname="com.test.oddschecker.service.OddsServiceTest" time="0.004"/>
+  <testcase name="storeOddsTestFail_inValidInput4" classname="com.test.oddschecker.service.OddsServiceTest" time="0.004"/>
+  <system-out><![CDATA[20:27:02.827 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.test.oddschecker.service.OddsServiceTest]
+20:27:02.827 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.test.oddschecker.service.OddsServiceTest]
+20:27:02.828 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.test.oddschecker.service.OddsServiceTest]
+20:27:02.828 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.test.oddschecker.service.OddsServiceTest]
+20:27:02.832 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@4b5bbdc testClass = OddsServiceTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@5cf09c56 testClass = OddsServiceTest, locations = '{}', classes = '{class com.test.oddschecker.OddscheckerApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1d566d58, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@642a2682, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2a53f0d7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@1a006a99, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@1414cbc2], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+20:27:02.835 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.test.oddschecker.service.OddsServiceTest]
+20:27:02.835 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.test.oddschecker.service.OddsServiceTest]
+20:27:02.859 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
 ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
@@ -20,7 +28,7 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.2.4.RELEASE)
 
-2020-01-25 16:20:33.896  WARN 7724 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+2020-01-25 20:27:03.250  WARN 30400 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
 
 Found multiple occurrences of org.json.JSONObject on the class path:
 
@@ -29,29 +37,31 @@ Found multiple occurrences of org.json.JSONObject on the class path:
 
 You may wish to exclude one of them to ensure predictable runtime behavior
 
-2020-01-25 16:20:33.906  INFO 7724 --- [    Test worker] c.t.oddschecker.service.OddsServiceTest  : Starting OddsServiceTest on DESKTOP-GU8VPH4 with PID 7724 (started by hkoud in C:\Users\hkoud\Downloads\oddschecker)
-2020-01-25 16:20:33.906  INFO 7724 --- [    Test worker] c.t.oddschecker.service.OddsServiceTest  : No active profile set, falling back to default profiles: default
-2020-01-25 16:20:35.026  INFO 7724 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-01-25 16:20:35.058  INFO 7724 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31ms. Found 1 JPA repository interfaces.
-2020-01-25 16:20:35.280  INFO 7724 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-01-25 16:20:35.642  INFO 7724 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2020-01-25 16:20:35.642  INFO 7724 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2020-01-25 16:20:35.693  INFO 7724 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-01-25 16:20:35.703  INFO 7724 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-01-25 20:27:03.271  INFO 30400 --- [    Test worker] c.t.oddschecker.service.OddsServiceTest  : Starting OddsServiceTest on DESKTOP-GU8VPH4 with PID 30400 (started by hkoud in C:\Users\hkoud\Downloads\oddschecker)
+2020-01-25 20:27:03.271  INFO 30400 --- [    Test worker] c.t.oddschecker.service.OddsServiceTest  : No active profile set, falling back to default profiles: default
+2020-01-25 20:27:04.623  INFO 30400 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-25 20:27:04.703  INFO 30400 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70ms. Found 1 JPA repository interfaces.
+2020-01-25 20:27:05.838  INFO 30400 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-25 20:27:06.123  INFO 30400 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-01-25 20:27:06.383  INFO 30400 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-01-25 20:27:06.500  INFO 30400 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-25 20:27:06.607  INFO 30400 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-01-25 20:27:06.675  INFO 30400 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-25 20:27:06.868  INFO 30400 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
 Hibernate: drop table odds if exists
 Hibernate: create table odds (odds_id integer generated by default as identity, bet_id integer not null, odds varchar(255) not null, user_id varchar(255) not null, primary key (odds_id))
-2020-01-25 16:20:35.763  INFO 7724 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-01-25 16:20:35.763  INFO 7724 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-01-25 16:20:36.108  WARN 7724 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-01-25 16:20:36.429  INFO 7724 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2020-01-25 16:20:36.624  INFO 7724 --- [    Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-01-25 16:20:36.893  INFO 7724 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-01-25 16:20:37.265  INFO 7724 --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-01-25 16:20:37.266  INFO 7724 --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-01-25 16:20:37.274  INFO 7724 --- [    Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-01-25 16:20:37.326  INFO 7724 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
-2020-01-25 16:20:37.327  INFO 7724 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
-2020-01-25 16:20:37.340  INFO 7724 --- [    Test worker] c.t.oddschecker.service.OddsServiceTest  : Started OddsServiceTest in 3.517 seconds (JVM running for 19.039)
+2020-01-25 20:27:07.504  INFO 30400 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-25 20:27:07.513  INFO 30400 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-25 20:27:08.057  WARN 30400 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-25 20:27:08.645  INFO 30400 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-01-25 20:27:08.910  INFO 30400 --- [    Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-01-25 20:27:09.665  INFO 30400 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-25 20:27:10.241  INFO 30400 --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-01-25 20:27:10.289  INFO 30400 --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-01-25 20:27:10.321  INFO 30400 --- [    Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-01-25 20:27:10.561  INFO 30400 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2020-01-25 20:27:10.564  INFO 30400 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2020-01-25 20:27:10.605  INFO 30400 --- [    Test worker] c.t.oddschecker.service.OddsServiceTest  : Started OddsServiceTest in 7.736 seconds (JVM running for 9.371)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
