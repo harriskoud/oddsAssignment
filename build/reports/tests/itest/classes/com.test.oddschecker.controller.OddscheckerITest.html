@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.test.oddschecker.controller.OddscheckerITest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.test.oddschecker.controller.OddscheckerITest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.test.oddschecker.controller.html">com.test.oddschecker.controller</a> &gt; OddscheckerITest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">7</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.152s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">retrieveBetwith1Odd</td>
+<td class="success">0.408s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">retrieveBetwith3Odds</td>
+<td class="success">0.058s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">retrieveOddsInvalidBetIdFormat</td>
+<td class="success">0.056s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">retrieveOddsNoBetFound</td>
+<td class="success">0.053s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">storeOddsInValidBetID</td>
+<td class="success">0.081s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">storeOddsInValidInput1</td>
+<td class="success">0.314s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">storeOddsValidInput</td>
+<td class="success">0.182s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>16:24:24.177 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.test.oddschecker.controller.OddscheckerITest]
+16:24:24.190 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+16:24:24.199 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+16:24:24.244 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.test.oddschecker.controller.OddscheckerITest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+16:24:24.266 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.test.oddschecker.controller.OddscheckerITest], using SpringBootContextLoader
+16:24:24.272 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.test.oddschecker.controller.OddscheckerITest]: class path resource [com/test/oddschecker/controller/OddscheckerITest-context.xml] does not exist
+16:24:24.272 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.test.oddschecker.controller.OddscheckerITest]: class path resource [com/test/oddschecker/controller/OddscheckerITestContext.groovy] does not exist
+16:24:24.272 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.test.oddschecker.controller.OddscheckerITest]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:24:24.273 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.test.oddschecker.controller.OddscheckerITest]: OddscheckerITest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:24:24.332 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.test.oddschecker.controller.OddscheckerITest]
+16:24:24.447 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\hkoud\Downloads\oddschecker\build\classes\java\main\com\test\oddschecker\OddscheckerApplication.class]
+16:24:24.448 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.test.oddschecker.OddscheckerApplication for test class com.test.oddschecker.controller.OddscheckerITest
+16:24:24.587 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.test.oddschecker.controller.OddscheckerITest]: using defaults.
+16:24:24.587 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+16:24:24.614 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6f86e5d1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@147b487b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7efe1206, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2b3819e5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7348c93e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3dbe6fbc, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@335e342f, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@58c2f490, org.springframework.test.context.event.EventPublishingTestExecutionListener@6df6c78f, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@237b8602, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6146310e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2e6f3fc2, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@757e5f3f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@aca8c04, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5ad41212]
+16:24:24.618 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.test.oddschecker.controller.OddscheckerITest]
+16:24:24.620 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.test.oddschecker.controller.OddscheckerITest]
+16:24:24.620 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.test.oddschecker.controller.OddscheckerITest]
+16:24:24.620 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.test.oddschecker.controller.OddscheckerITest]
+16:24:24.626 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@28b8dba9 testClass = OddscheckerITest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@239f7579 testClass = OddscheckerITest, locations = '{}', classes = '{class com.test.oddschecker.OddscheckerApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@7f856092, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@18825a77, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3316ad29, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5c613819, org.springframework.test.context.web.socket.MockServerContainerContextCustomizer@12f078b8], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
+16:24:24.630 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.test.oddschecker.controller.OddscheckerITest]
+16:24:24.630 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.test.oddschecker.controller.OddscheckerITest]
+16:24:24.657 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.4.RELEASE)
+
+2020-01-25 16:24:25.068  WARN 20752 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/hkoud/.gradle/caches/modules-2/files-2.1/org.json/json/20190722/7bce7bacf0ab5e9f894d307a3de8b7f540064d5/json-20190722.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/hkoud/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-01-25 16:24:25.122  INFO 20752 --- [    Test worker] c.t.o.controller.OddscheckerITest        : Starting OddscheckerITest on DESKTOP-GU8VPH4 with PID 20752 (started by hkoud in C:\Users\hkoud\Downloads\oddschecker)
+2020-01-25 16:24:25.123  INFO 20752 --- [    Test worker] c.t.o.controller.OddscheckerITest        : No active profile set, falling back to default profiles: default
+2020-01-25 16:24:26.633  INFO 20752 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-25 16:24:26.715  INFO 20752 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72ms. Found 1 JPA repository interfaces.
+2020-01-25 16:24:27.342  INFO 20752 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-25 16:24:27.847  INFO 20752 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-01-25 16:24:28.238  INFO 20752 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-01-25 16:24:28.377  INFO 20752 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-25 16:24:28.579  INFO 20752 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-01-25 16:24:28.932  INFO 20752 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-25 16:24:29.228  INFO 20752 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Hibernate: drop table odds if exists
+Hibernate: create table odds (odds_id integer generated by default as identity, bet_id integer not null, odds varchar(255) not null, user_id varchar(255) not null, primary key (odds_id))
+2020-01-25 16:24:30.104  INFO 20752 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-25 16:24:30.113  INFO 20752 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-25 16:24:31.233  WARN 20752 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-25 16:24:32.287  INFO 20752 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-01-25 16:24:32.630  INFO 20752 --- [    Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-01-25 16:24:33.249  INFO 20752 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-25 16:24:33.901  INFO 20752 --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-01-25 16:24:33.938  INFO 20752 --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-01-25 16:24:33.973  INFO 20752 --- [    Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-01-25 16:24:34.217  INFO 20752 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2020-01-25 16:24:34.220  INFO 20752 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2020-01-25 16:24:34.282  INFO 20752 --- [    Test worker] c.t.o.controller.OddscheckerITest        : Started OddscheckerITest in 9.614 seconds (JVM running for 11.104)
+2020-01-25 16:24:34.488  INFO 20752 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2020-01-25 16:24:34.488  INFO 20752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-01-25 16:24:34.489  INFO 20752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2020-01-25 16:24:34.506  INFO 20752 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2020-01-25 16:24:34.506  INFO 20752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-01-25 16:24:34.506  INFO 20752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2020-01-25 16:24:34.653  INFO 20752 --- [    Test worker] c.t.o.controller.OddscheckerController   : Storing new odds $ for bet $
+2020-01-25 16:24:34.705  INFO 20752 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2020-01-25 16:24:34.705  INFO 20752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-01-25 16:24:34.705  INFO 20752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2020-01-25 16:24:34.721  INFO 20752 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2020-01-25 16:24:34.721  INFO 20752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-01-25 16:24:34.722  INFO 20752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2020-01-25 16:24:34.731  INFO 20752 --- [    Test worker] c.t.o.controller.OddscheckerController   : Storing new odds $ for bet $
+Hibernate: insert into odds (odds_id, bet_id, odds, user_id) values (null, ?, ?, ?)
+2020-01-25 16:24:34.886  INFO 20752 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2020-01-25 16:24:34.886  INFO 20752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-01-25 16:24:34.886  INFO 20752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2020-01-25 16:24:34.917  INFO 20752 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2020-01-25 16:24:34.917  INFO 20752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-01-25 16:24:34.917  INFO 20752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+Hibernate: select odds0_.odds_id as odds_id1_0_0_, odds0_.bet_id as bet_id2_0_0_, odds0_.odds as odds3_0_0_, odds0_.user_id as user_id4_0_0_ from odds odds0_ where odds0_.odds_id=?
+Hibernate: update odds set bet_id=?, odds=?, user_id=? where odds_id=?
+Hibernate: select odds0_.odds_id as odds_id1_0_0_, odds0_.bet_id as bet_id2_0_0_, odds0_.odds as odds3_0_0_, odds0_.user_id as user_id4_0_0_ from odds odds0_ where odds0_.odds_id=?
+Hibernate: insert into odds (odds_id, bet_id, odds, user_id) values (null, ?, ?, ?)
+Hibernate: select odds0_.odds_id as odds_id1_0_0_, odds0_.bet_id as bet_id2_0_0_, odds0_.odds as odds3_0_0_, odds0_.user_id as user_id4_0_0_ from odds odds0_ where odds0_.odds_id=?
+Hibernate: insert into odds (odds_id, bet_id, odds, user_id) values (null, ?, ?, ?)
+2020-01-25 16:24:34.972  INFO 20752 --- [    Test worker] c.t.o.controller.OddscheckerController   : Quering new odds for bet $
+Hibernate: select odds0_.odds_id as odds_id1_0_, odds0_.bet_id as bet_id2_0_, odds0_.odds as odds3_0_, odds0_.user_id as user_id4_0_ from odds odds0_ where odds0_.bet_id=?
+2020-01-25 16:24:35.304  INFO 20752 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2020-01-25 16:24:35.304  INFO 20752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-01-25 16:24:35.305  INFO 20752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2020-01-25 16:24:35.330  INFO 20752 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2020-01-25 16:24:35.330  INFO 20752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-01-25 16:24:35.331  INFO 20752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2020-01-25 16:24:35.378  INFO 20752 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2020-01-25 16:24:35.378  INFO 20752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-01-25 16:24:35.379  INFO 20752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2020-01-25 16:24:35.391  INFO 20752 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2020-01-25 16:24:35.392  INFO 20752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-01-25 16:24:35.392  INFO 20752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+Hibernate: select odds0_.odds_id as odds_id1_0_0_, odds0_.bet_id as bet_id2_0_0_, odds0_.odds as odds3_0_0_, odds0_.user_id as user_id4_0_0_ from odds odds0_ where odds0_.odds_id=?
+Hibernate: update odds set bet_id=?, odds=?, user_id=? where odds_id=?
+Hibernate: select odds0_.odds_id as odds_id1_0_0_, odds0_.bet_id as bet_id2_0_0_, odds0_.odds as odds3_0_0_, odds0_.user_id as user_id4_0_0_ from odds odds0_ where odds0_.odds_id=?
+Hibernate: select odds0_.odds_id as odds_id1_0_0_, odds0_.bet_id as bet_id2_0_0_, odds0_.odds as odds3_0_0_, odds0_.user_id as user_id4_0_0_ from odds odds0_ where odds0_.odds_id=?
+2020-01-25 16:24:35.404  INFO 20752 --- [    Test worker] c.t.o.controller.OddscheckerController   : Quering new odds for bet $
+Hibernate: select odds0_.odds_id as odds_id1_0_, odds0_.bet_id as bet_id2_0_, odds0_.odds as odds3_0_, odds0_.user_id as user_id4_0_ from odds odds0_ where odds0_.bet_id=?
+2020-01-25 16:24:35.433  INFO 20752 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2020-01-25 16:24:35.433  INFO 20752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-01-25 16:24:35.434  INFO 20752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2020-01-25 16:24:35.450  INFO 20752 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2020-01-25 16:24:35.451  INFO 20752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-01-25 16:24:35.451  INFO 20752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+Hibernate: select odds0_.odds_id as odds_id1_0_0_, odds0_.bet_id as bet_id2_0_0_, odds0_.odds as odds3_0_0_, odds0_.user_id as user_id4_0_0_ from odds odds0_ where odds0_.odds_id=?
+Hibernate: update odds set bet_id=?, odds=?, user_id=? where odds_id=?
+Hibernate: select odds0_.odds_id as odds_id1_0_0_, odds0_.bet_id as bet_id2_0_0_, odds0_.odds as odds3_0_0_, odds0_.user_id as user_id4_0_0_ from odds odds0_ where odds0_.odds_id=?
+Hibernate: select odds0_.odds_id as odds_id1_0_0_, odds0_.bet_id as bet_id2_0_0_, odds0_.odds as odds3_0_0_, odds0_.user_id as user_id4_0_0_ from odds odds0_ where odds0_.odds_id=?
+2020-01-25 16:24:35.463  INFO 20752 --- [    Test worker] c.t.o.controller.OddscheckerController   : Quering new odds for bet $
+Hibernate: select odds0_.odds_id as odds_id1_0_, odds0_.bet_id as bet_id2_0_, odds0_.odds as odds3_0_, odds0_.user_id as user_id4_0_ from odds odds0_ where odds0_.bet_id=?
+2020-01-25 16:24:35.491  INFO 20752 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2020-01-25 16:24:35.491  INFO 20752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-01-25 16:24:35.492  INFO 20752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2020-01-25 16:24:35.510  INFO 20752 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2020-01-25 16:24:35.511  INFO 20752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-01-25 16:24:35.511  INFO 20752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+Hibernate: select odds0_.odds_id as odds_id1_0_0_, odds0_.bet_id as bet_id2_0_0_, odds0_.odds as odds3_0_0_, odds0_.user_id as user_id4_0_0_ from odds odds0_ where odds0_.odds_id=?
+Hibernate: select odds0_.odds_id as odds_id1_0_0_, odds0_.bet_id as bet_id2_0_0_, odds0_.odds as odds3_0_0_, odds0_.user_id as user_id4_0_0_ from odds odds0_ where odds0_.odds_id=?
+Hibernate: select odds0_.odds_id as odds_id1_0_0_, odds0_.bet_id as bet_id2_0_0_, odds0_.odds as odds3_0_0_, odds0_.user_id as user_id4_0_0_ from odds odds0_ where odds0_.odds_id=?
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.0.1</a> at Jan 25, 2020 4:24:35 PM</p>
+</div>
+</div>
+</body>
+</html>

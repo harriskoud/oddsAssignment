@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="7.6.1">
+<file name="C:\Users\hkoud\Downloads\oddschecker\src\main\java\com\test\oddschecker\OddscheckerApplication.java">
+</file>
+<file name="C:\Users\hkoud\Downloads\oddschecker\src\main\java\com\test\oddschecker\config\SwaggerConfig.java">
+</file>
+<file name="C:\Users\hkoud\Downloads\oddschecker\src\main\java\com\test\oddschecker\controller\OddscheckerController.java">
+</file>
+<file name="C:\Users\hkoud\Downloads\oddschecker\src\main\java\com\test\oddschecker\domain\Bet.java">
+</file>
+<file name="C:\Users\hkoud\Downloads\oddschecker\src\main\java\com\test\oddschecker\domain\Odds.java">
+</file>
+<file name="C:\Users\hkoud\Downloads\oddschecker\src\main\java\com\test\oddschecker\exception\BetIdInvalidFormatException.java">
+</file>
+<file name="C:\Users\hkoud\Downloads\oddschecker\src\main\java\com\test\oddschecker\exception\OddsRetrievalBadRequestException.java">
+</file>
+<file name="C:\Users\hkoud\Downloads\oddschecker\src\main\java\com\test\oddschecker\exception\OddsStorageBadRequestException.java">
+</file>
+<file name="C:\Users\hkoud\Downloads\oddschecker\src\main\java\com\test\oddschecker\repository\OddsRepository.java">
+</file>
+<file name="C:\Users\hkoud\Downloads\oddschecker\src\main\java\com\test\oddschecker\service\OddsService.java">
+</file>
+<file name="C:\Users\hkoud\Downloads\oddschecker\src\main\java\com\test\oddschecker\utility\ControllerUtility.java">
+</file>
+</checkstyle>
