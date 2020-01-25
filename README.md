@@ -7,7 +7,7 @@
 - Basic swagger implementation for exposing the endpoints.
 
 # Technologies
-Java 8, Spring boot framework, H2 in memory Data base, gradle.
+Java 8, Spring boot framework, H2 in memory DB, gradle.
 
 # Architecture
 The project consists of one component
