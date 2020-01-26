@@ -49,7 +49,6 @@ public class OddscheckerITest {
 
     private static final String VALID_INPUT1 = "1/10";
     private static final String VALID_INPUT2 = "2/1";
-    private static final String VALID_INPUT3 = "SP";
     private static final String USER_ID = "USER_1";
     private static final Integer BET_ID = 1;
     private static final Integer BET_ID_1 = 2;
@@ -62,10 +61,25 @@ public class OddscheckerITest {
     private static final int RANDOM_NUMBER = 999;
     private static final String RANDOM_STRING = "random";
 
+    private static final String VALID_REQUEST_BODY = "{\n" +
+            "  \"betId\": \"1\",\n" +
+            "  \"odds\": \"1/10\",\n" +
+            "  \"userId\": \"Harris\"\n" +
+            "}";
+    private static final String REQUEST_BODY_INVALID_BET_ID = "{\n" +
+            "  \"betId\": \"test\",\n" +
+            "  \"odds\": \"1/10\",\n" +
+            "  \"userId\": \"Harris\"\n" +
+            "}";
+    private static final String REQUEST_BODY_INVALID_ODDS_FORMAT = "{\n" +
+            "  \"betId\": \"1\",\n" +
+            "  \"odds\": \"0/10\",\n" +
+            "  \"userId\": \"Harris\"\n" +
+            "}";
+
     @Before
     public void setUp() {
         mvc = MockMvcBuilders.standaloneSetup(oddscheckerController).build();
-        MockMvcBuilders.standaloneSetup(oddsRepository).build();
         restTemplate = new RestTemplate();
     }
 
@@ -73,11 +87,7 @@ public class OddscheckerITest {
     public void storeOddsValidInput() throws Exception {
         MvcResult result = mvc.perform(post(ODDS_BASE_PATH)
                 .contentType(MediaType.APPLICATION_JSON_VALUE)
-                .content("{\n" +
-                        "  \"betId\": \"1\",\n" +
-                        "  \"odds\": \"1/10\",\n" +
-                        "  \"userId\": \"Harris\"\n" +
-                        "}"))
+                .content(VALID_REQUEST_BODY))
                 .andExpect(status().isCreated()).andExpect(content().string(createJsonObject(ODDS_ACCEPTED).toString())).andReturn();
     }
 
@@ -85,11 +95,7 @@ public class OddscheckerITest {
     public void storeOddsInValidBetID() throws Exception {
         MvcResult result = mvc.perform(post(ODDS_BASE_PATH)
                 .contentType(MediaType.APPLICATION_JSON_VALUE)
-                .content("{\n" +
-                        "  \"betId\": \"test\",\n" +
-                        "  \"odds\": \"1/10\",\n" +
-                        "  \"userId\": \"Harris\"\n" +
-                        "}"))
+                .content(REQUEST_BODY_INVALID_BET_ID))
                 .andExpect(status().isBadRequest()).andReturn();
 
         ObjectMapper mapper = new ObjectMapper();
@@ -101,11 +107,7 @@ public class OddscheckerITest {
     public void storeOddsInValidInput1() throws Exception {
         MvcResult result = mvc.perform(post(ODDS_BASE_PATH)
                 .contentType(MediaType.APPLICATION_JSON_VALUE)
-                .content("{\n" +
-                        "  \"betId\": \"1\",\n" +
-                        "  \"odds\": \"0/10\",\n" +
-                        "  \"userId\": \"Harris\"\n" +
-                        "}"))
+                .content(REQUEST_BODY_INVALID_ODDS_FORMAT))
                 .andExpect(status().isBadRequest()).andReturn();
         Optional<OddsStorageBadRequestException> exception = Optional.ofNullable((OddsStorageBadRequestException) result.getResolvedException());
 
