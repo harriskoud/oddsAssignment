@@ -7,7 +7,6 @@ import com.test.oddschecker.domain.Odds;
 import com.test.oddschecker.exception.OddsRetrievalBadRequestException;
 import com.test.oddschecker.exception.OddsStorageBadRequestException;
 import com.test.oddschecker.repository.OddsRepository;
-import com.test.oddschecker.utility.ControllerUtility;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

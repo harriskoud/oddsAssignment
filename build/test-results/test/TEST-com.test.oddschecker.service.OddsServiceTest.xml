@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.test.oddschecker.service.OddsServiceTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-01-25T18:41:36" hostname="DESKTOP-GU8VPH4" time="0.058">
+<testsuite name="com.test.oddschecker.service.OddsServiceTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-01-26T18:38:20" hostname="DESKTOP-GU8VPH4" time="0.078">
   <properties/>
-  <testcase name="retrieveOdds_shouldThrowNotFoundException" classname="com.test.oddschecker.service.OddsServiceTest" time="0.006"/>
-  <testcase name="retrieveOdds_shouldReturn1" classname="com.test.oddschecker.service.OddsServiceTest" time="0.004"/>
+  <testcase name="retrieveOdds_shouldThrowNotFoundException" classname="com.test.oddschecker.service.OddsServiceTest" time="0.01"/>
+  <testcase name="retrieveOdds_shouldReturn1" classname="com.test.oddschecker.service.OddsServiceTest" time="0.007"/>
   <testcase name="retrieveOdds_shouldReturn3" classname="com.test.oddschecker.service.OddsServiceTest" time="0.004"/>
-  <testcase name="storeOddsTestSuccess_validInput1" classname="com.test.oddschecker.service.OddsServiceTest" time="0.012"/>
-  <testcase name="storeOddsTestSuccess_validInput2" classname="com.test.oddschecker.service.OddsServiceTest" time="0.004"/>
-  <testcase name="storeOddsTestSuccess_validInput3" classname="com.test.oddschecker.service.OddsServiceTest" time="0.004"/>
-  <testcase name="storeOddsTestFail_inValidInput1" classname="com.test.oddschecker.service.OddsServiceTest" time="0.003"/>
+  <testcase name="storeOddsTestSuccess_validInput1" classname="com.test.oddschecker.service.OddsServiceTest" time="0.014"/>
+  <testcase name="storeOddsTestSuccess_validInput2" classname="com.test.oddschecker.service.OddsServiceTest" time="0.005"/>
+  <testcase name="storeOddsTestSuccess_validInput3" classname="com.test.oddschecker.service.OddsServiceTest" time="0.006"/>
+  <testcase name="storeOddsTestFail_inValidInput1" classname="com.test.oddschecker.service.OddsServiceTest" time="0.006"/>
   <testcase name="storeOddsTestFail_inValidInput2" classname="com.test.oddschecker.service.OddsServiceTest" time="0.004"/>
-  <testcase name="storeOddsTestFail_inValidInput3" classname="com.test.oddschecker.service.OddsServiceTest" time="0.003"/>
+  <testcase name="storeOddsTestFail_inValidInput3" classname="com.test.oddschecker.service.OddsServiceTest" time="0.004"/>
   <testcase name="storeOddsTestFail_inValidInput4" classname="com.test.oddschecker.service.OddsServiceTest" time="0.004"/>
   <system-out><![CDATA[
   .   ____          _            __ _ _
@@ -20,7 +20,7 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.2.4.RELEASE)
 
-2020-01-25 20:41:34.288  WARN 19168 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+2020-01-26 20:38:18.232  WARN 8584 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
 
 Found multiple occurrences of org.json.JSONObject on the class path:
 
@@ -29,42 +29,42 @@ Found multiple occurrences of org.json.JSONObject on the class path:
 
 You may wish to exclude one of them to ensure predictable runtime behavior
 
-2020-01-25 20:41:34.289  INFO 19168 --- [    Test worker] c.t.oddschecker.service.OddsServiceTest  : Starting OddsServiceTest on DESKTOP-GU8VPH4 with PID 19168 (started by hkoud in C:\Users\hkoud\Downloads\oddschecker)
-2020-01-25 20:41:34.290  INFO 19168 --- [    Test worker] c.t.oddschecker.service.OddsServiceTest  : No active profile set, falling back to default profiles: default
-2020-01-25 20:41:34.824  INFO 19168 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-01-25 20:41:34.842  INFO 19168 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 1 JPA repository interfaces.
-2020-01-25 20:41:34.952  INFO 19168 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-01-25 20:41:35.094  INFO 19168 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2020-01-25 20:41:35.095  INFO 19168 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2020-01-25 20:41:35.115  INFO 19168 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-01-25 20:41:35.122  INFO 19168 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-01-26 20:38:18.234  INFO 8584 --- [    Test worker] c.t.oddschecker.service.OddsServiceTest  : Starting OddsServiceTest on DESKTOP-GU8VPH4 with PID 8584 (started by hkoud in C:\Users\hkoud\Downloads\oddschecker)
+2020-01-26 20:38:18.234  INFO 8584 --- [    Test worker] c.t.oddschecker.service.OddsServiceTest  : No active profile set, falling back to default profiles: default
+2020-01-26 20:38:18.868  INFO 8584 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-26 20:38:18.892  INFO 8584 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 1 JPA repository interfaces.
+2020-01-26 20:38:19.011  INFO 8584 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-26 20:38:19.152  INFO 8584 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-01-26 20:38:19.153  INFO 8584 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-01-26 20:38:19.175  INFO 8584 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-26 20:38:19.182  INFO 8584 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
 Hibernate: drop table odds if exists
 Hibernate: create table odds (odds_id integer generated by default as identity, bet_id integer not null, odds varchar(255) not null, user_id varchar(255) not null, primary key (odds_id))
-2020-01-25 20:41:35.159  INFO 19168 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-01-25 20:41:35.160  INFO 19168 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-01-25 20:41:35.418  WARN 19168 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-01-25 20:41:35.723  INFO 19168 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2020-01-25 20:41:35.889  INFO 19168 --- [    Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-01-25 20:41:36.136  INFO 19168 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-01-25 20:41:36.482  INFO 19168 --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-01-25 20:41:36.483  INFO 19168 --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-01-25 20:41:36.490  INFO 19168 --- [    Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-01-25 20:41:36.530  INFO 19168 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
-2020-01-25 20:41:36.532  INFO 19168 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
-2020-01-25 20:41:36.543  INFO 19168 --- [    Test worker] c.t.oddschecker.service.OddsServiceTest  : Started OddsServiceTest in 2.288 seconds (JVM running for 11.699)
-2020-01-25 20:41:36.552 ERROR 19168 --- [    Test worker] c.test.oddschecker.service.OddsService   : Requested betId : 29999 was not found
-2020-01-25 20:41:36.557  INFO 19168 --- [    Test worker] c.test.oddschecker.service.OddsService   : Fetched: Optional[[[Odds:  oddsId 1 userId 2 userId USER_1 odds 1/10 ]]]
-2020-01-25 20:41:36.562  INFO 19168 --- [    Test worker] c.test.oddschecker.service.OddsService   : Fetched: Optional[[[Odds:  oddsId 1 userId 1 userId USER_1 odds 1/10 ], [Odds:  oddsId 2 userId 1 userId USER_1 odds 2/1 ], [Odds:  oddsId 3 userId 1 userId USER_1 odds 2/1 ]]]
-2020-01-25 20:41:36.568  INFO 19168 --- [    Test worker] c.test.oddschecker.service.OddsService   : Validating odds 1/10 format
-2020-01-25 20:41:36.568  INFO 19168 --- [    Test worker] c.test.oddschecker.service.OddsService   : Stored: [Odds:  oddsId 1 userId 1 userId USER_1 odds 1/10 ]
-2020-01-25 20:41:36.580  INFO 19168 --- [    Test worker] c.test.oddschecker.service.OddsService   : Validating odds 2/1 format
-2020-01-25 20:41:36.580  INFO 19168 --- [    Test worker] c.test.oddschecker.service.OddsService   : Stored: [Odds:  oddsId 1 userId 1 userId USER_1 odds 2/1 ]
-2020-01-25 20:41:36.586  INFO 19168 --- [    Test worker] c.test.oddschecker.service.OddsService   : Validating odds SP format
-2020-01-25 20:41:36.586  INFO 19168 --- [    Test worker] c.test.oddschecker.service.OddsService   : Stored: [Odds:  oddsId 1 userId 1 userId USER_1 odds SP ]
-2020-01-25 20:41:36.590  INFO 19168 --- [    Test worker] c.test.oddschecker.service.OddsService   : Validating odds 0/1 format
-2020-01-25 20:41:36.595  INFO 19168 --- [    Test worker] c.test.oddschecker.service.OddsService   : Validating odds SP/1 format
-2020-01-25 20:41:36.599  INFO 19168 --- [    Test worker] c.test.oddschecker.service.OddsService   : Validating odds 2/3/1 format
-2020-01-25 20:41:36.603  INFO 19168 --- [    Test worker] c.test.oddschecker.service.OddsService   : Validating odds 23*4 format
+2020-01-26 20:38:19.220  INFO 8584 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-26 20:38:19.220  INFO 8584 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-26 20:38:19.517  WARN 8584 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-26 20:38:19.875  INFO 8584 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-01-26 20:38:20.082  INFO 8584 --- [    Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-01-26 20:38:20.379  INFO 8584 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-26 20:38:20.865  INFO 8584 --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-01-26 20:38:20.866  INFO 8584 --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-01-26 20:38:20.873  INFO 8584 --- [    Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-01-26 20:38:20.935  INFO 8584 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2020-01-26 20:38:20.937  INFO 8584 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2020-01-26 20:38:20.957  INFO 8584 --- [    Test worker] c.t.oddschecker.service.OddsServiceTest  : Started OddsServiceTest in 2.764 seconds (JVM running for 15.599)
+2020-01-26 20:38:20.968 ERROR 8584 --- [    Test worker] c.test.oddschecker.service.OddsService   : Requested betId : 29999 was not found
+2020-01-26 20:38:20.978  INFO 8584 --- [    Test worker] c.test.oddschecker.service.OddsService   : Fetched: Optional[[[Odds:  oddsId 1 userId 2 userId USER_1 odds 1/10 ]]]
+2020-01-26 20:38:20.984  INFO 8584 --- [    Test worker] c.test.oddschecker.service.OddsService   : Fetched: Optional[[[Odds:  oddsId 1 userId 1 userId USER_1 odds 1/10 ], [Odds:  oddsId 2 userId 1 userId USER_1 odds 2/1 ], [Odds:  oddsId 3 userId 1 userId USER_1 odds 2/1 ]]]
+2020-01-26 20:38:20.991  INFO 8584 --- [    Test worker] c.test.oddschecker.service.OddsService   : Validating odds 1/10 format
+2020-01-26 20:38:20.992  INFO 8584 --- [    Test worker] c.test.oddschecker.service.OddsService   : Stored: [Odds:  oddsId 1 userId 1 userId USER_1 odds 1/10 ]
+2020-01-26 20:38:21.004  INFO 8584 --- [    Test worker] c.test.oddschecker.service.OddsService   : Validating odds 2/1 format
+2020-01-26 20:38:21.005  INFO 8584 --- [    Test worker] c.test.oddschecker.service.OddsService   : Stored: [Odds:  oddsId 1 userId 1 userId USER_1 odds 2/1 ]
+2020-01-26 20:38:21.010  INFO 8584 --- [    Test worker] c.test.oddschecker.service.OddsService   : Validating odds SP format
+2020-01-26 20:38:21.011  INFO 8584 --- [    Test worker] c.test.oddschecker.service.OddsService   : Stored: [Odds:  oddsId 1 userId 1 userId USER_1 odds SP ]
+2020-01-26 20:38:21.020  INFO 8584 --- [    Test worker] c.test.oddschecker.service.OddsService   : Validating odds 0/1 format
+2020-01-26 20:38:21.027  INFO 8584 --- [    Test worker] c.test.oddschecker.service.OddsService   : Validating odds SP/1 format
+2020-01-26 20:38:21.032  INFO 8584 --- [    Test worker] c.test.oddschecker.service.OddsService   : Validating odds 2/3/1 format
+2020-01-26 20:38:21.037  INFO 8584 --- [    Test worker] c.test.oddschecker.service.OddsService   : Validating odds 23*4 format
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
