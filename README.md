@@ -25,7 +25,7 @@ java -jar oddschecker-0.0.1.jar
 ```
 After these two commands, we can open a browser and paste 
 **http://localhost:8090/swagger-ui.html**.
-There we can find all the endpoints along with the responses and the models that we need to use for each one.
+There we can find all the endpoints along with the responses and the models that we need to use.
 
 # Integration Tests
 The application has integration tests for e2e testing of functionality. Run the command bellow to execute those tests.
