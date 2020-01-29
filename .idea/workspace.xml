@@ -1,28 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b029a6dc-70f9-409b-87cf-2b4ec18346e3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/itest/com/test/oddschecker/controller/OddscheckerITest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/itest/com/test/oddschecker/controller/OddscheckerITest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/itest/classes/com.test.oddschecker.controller.OddscheckerITest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/itest/classes/com.test.oddschecker.controller.OddscheckerITest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/itest/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/itest/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/itest/packages/com.test.oddschecker.controller.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/itest/packages/com.test.oddschecker.controller.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/itest/TEST-com.test.oddschecker.controller.OddscheckerITest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/itest/TEST-com.test.oddschecker.controller.OddscheckerITest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/itest/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/itest/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/itest/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/itest/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/itest/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/itest/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/itest/java/com/test/oddschecker/controller/OddscheckerITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/itest/java/com/test/oddschecker/controller/OddscheckerITest.java" afterDir="false" />
+    <list default="true" id="b029a6dc-70f9-409b-87cf-2b4ec18346e3" name="Default Changelist" comment="update Dockerfile">
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +19,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="oddschecker" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -71,18 +57,6 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\hkoud\Downloads\oddschecker\src\main\java\com\test\oddschecker\domain" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Gradle.OddscheckerITest.storeOddsInValidBetID">
     <configuration name="OddscheckerControllerTest.testRetrieveOdds_InvalidBetId" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
