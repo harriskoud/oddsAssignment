@@ -1,0 +1,10 @@
+sidecar:
+  imagePullPolicy: IfNotPresent
+  datasources:
+    enabled: true
+    label: grafana_datasource
+  persistence:
+    enabled: true
+    accessModes:
+      - ReadWriteOnce
+    size: 5Gi

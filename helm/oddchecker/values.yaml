@@ -1,24 +1,15 @@
-replicaCount: 1
 image:
   repository: "koudocker/oddschecker"
   tag: "latest"
   pullPolicy: IfNotPresent
+
 service:
-  type: NodePort
-  port: 8080
-liveness:
-  initialDelaySecondsL: 60
-  httpGet:
-    path: /health
-    port: 8090
-  timeoutSeconds: 3
-  periodSeconds: 15
-readiness:
-  initialDelaySecondsL: 60
-  httpGet:
-    path: /health
-    port: 8090
-  timeoutSeconds: 3
-  periodSeconds: 15
-containerPort: 8080
-name: oddschecker
+  type: LoadBalancer
+  port: 8090
+
+autoscaling:
+  enabled: true
+  minReplicas: 4
+  maxReplicas: 10
+  #targetCPUUtilizationPercentage: 1
+  targetMemoryUtilizationPercentage: 10
